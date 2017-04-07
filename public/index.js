@@ -25,6 +25,7 @@ $("#register").click(function(){
 	var email = $("#email").val()
 
 	if (name === "" || typeof(degree) === "undefined" || typeof(grade) === "undefined" || schoolname === "" || email === "") {
+		$("#errortext").css("color", "red");
 		$('#errortext').text("Please fill all the required")
 	} else {
 		$('#errortext').text("")
@@ -44,9 +45,11 @@ $("#register").click(function(){
 		// post request
 		$.post("https://lsaj2017.herokuapp.com/register",data, function(response){
 			if (response === "OK") {
-				alert("ຂອບໃຈທີ່ໃຫ້ຄວາມມື")
+				$("#errortext").css("color", "green");
+				$('#errortext').text("ຂອບໃຈທີ່ໃຫ້ຄວາມມື")
 			} else {
-				alert(response)
+				$("#errortext").css("color", "red");
+				$('#errortext').text(response)
 			}
 		})
 	}
