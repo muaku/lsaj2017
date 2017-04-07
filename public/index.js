@@ -43,11 +43,13 @@ $("#register").click(function(){
 	    }
 
 		// post request
-		$.post("https://lsaj2017.herokuapp.com/register",data, function(response){
+		$.post("http://localhost:7000/register",data, function(response){
 			if (response === "OK") {
 				// clear all input
-				$("#form").reset()
-				//
+				$("#form").find('input').val("")
+				$("#form").find('input:date').val("")
+
+				// apply error text
 				$("#errortext").css("color", "green");
 				$('#errortext').text("ຂອບໃຈທີ່ໃຫ້ຄວາມຮ່ວມມື")
 			} else {
