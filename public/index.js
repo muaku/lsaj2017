@@ -43,7 +43,7 @@ $("#register").click(function(){
 	    }
 
 		// post request
-		$.post("http://localhost:7000/register",data, function(response){
+		$.post("https://lsaj2017.herokuapp.com/register",data, function(response){
 			if (response === "OK") {
 				// clear all input
 				$("#form").find('input').val("")
