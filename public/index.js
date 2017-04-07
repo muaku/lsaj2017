@@ -45,13 +45,14 @@ $("#register").click(function(){
 		// post request
 		$.post("https://lsaj2017.herokuapp.com/register",data, function(response){
 			if (response === "OK") {
+				// apply error text
+				$("#errortext").css("color", "green");
+				$('#errortext').text("ຂອບໃຈທີ່ໃຫ້ຄວາມຮ່ວມມື")
 				// clear all input
 				$("#form").find('input').val("")
 				$("#form").find('input:date').val("")
 
-				// apply error text
-				$("#errortext").css("color", "green");
-				$('#errortext').text("ຂອບໃຈທີ່ໃຫ້ຄວາມຮ່ວມມື")
+				
 			} else {
 				$("#errortext").css("color", "red");
 				$('#errortext').text(response)
