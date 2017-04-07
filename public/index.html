@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lsajproject</title>
+  <base href="/">
+
+ 	<!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" href="./index.css">
+
+</head>
+<body>
+
+
+
+<div id="content">
+<div class="container">
+
+<form>
+
+ <div class="row">
+ 	<h4>ແບບຟອມເກັບຂໍ້ມູນນັກສຶກສາລາວ ສນລຍ ເຂດຄັນໂຕ</h4>
+<div class="row" id="topbar">
+</div>
+      <div class="row">
+        <div class="col s12 ">
+          <div id="title">ຊື່ ແລະ ນາມສະກຸນ<span>*</span> </div>
+          <input id="name" placeholder="ທ. ບຸນມີ ບຸນມາ" type="text" class="validate">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 ">
+          <div id="title">ກຳລັງສຶກສາ<span>*</span></div>
+          <p>
+          	<input name="group1" value="ຊັ້ນສູງ" type="radio" id="test1" />
+      	  	<label for="test1">ຊັ້ນສູງ</label>
+          </p>
+          <p>
+          	<input name="group1" value="ປ. ເອກ"  type="radio" id="test2" />
+      	  	<label for="test2">ປ. ເອກ</label>
+          </p>
+          <p>
+          	<input name="group1" value="ປ. ຕີ" type="radio" id="test3" />
+      	  	<label for="test3">ປ. ຕີ</label>
+          </p>
+          <p>
+          	<input name="group1" value="ປ. ໂທ" type="radio" id="test4" />
+      	  	<label for="test4">ປ. ໂທ</label>
+          </p>
+           <p>
+          	<input name="group1" value="ນັກສຶກສາຄົ້ນຄວ້າ (ກຽມ ປ. ໂທ, ປ. ເອກ)" type="radio" id="test5" />
+      	  	<label for="test5">ນັກສຶກສາຄົ້ນຄວ້າ (ກຽມ ປ. ໂທ, ປ. ເອກ)</label>
+          </p>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 ">
+          <div id="title">ປັດຈຸບັນຮຽນປີທີ<span>*</span></div>
+          <p>
+          	<input name="group2" value="0" type="radio" id="group2_0" />
+      	  	<label for="group2_0">0</label>
+          </p>
+          <p>
+          	<input name="group2" value="1" type="radio" id="group2_1" />
+      	  	<label for="group2_1">1</label>
+          </p>
+          <p>
+          	<input name="group2" value="2" type="radio" id="group2_2" />
+      	  	<label for="group2_2">2</label>
+          </p>
+          <p>
+          	<input name="group2" value="3" type="radio" id="group2_3" />
+      	  	<label for="group2_3">3</label>
+          </p>
+           <p>
+          	<input name="group2" value="4" type="radio" id="group2_4" />
+      	  	<label for="group2_4">4</label>
+          </p>
+        </div>
+      </div>
+
+       <div class="row">
+	      <div class="col s12 ">
+	      	  <div id="title">ຊື່ມະຫາວິທະຍາໄລ<span>*</span></div>
+	          <input id="schoolname" placeholder="ມະຫາວິທະຍາໄລໂຕກຽວ" type="text" class="validate">
+	       </div>
+	  </div>
+
+	  <div class="row">
+	      <div class="col s12 ">
+	      	  <div id="title">ເບີໂທລະສັບ</div>
+	          <input id="phone" placeholder="080 xxxx xxxx" type="number" class="validate" >
+	       </div>
+	  </div>
+
+	  <div class="row">
+	      <div class="col s12 ">
+	      	  <div id="title">Email<span>*</span></div>
+	          <input id="email" placeholder="email@yahoo.com" type="text" class="validate">
+	       </div>
+	  </div>
+
+      <div class="row">
+	      <div class="col s12 ">
+	      	  <div id="title">ວັນເຂົ້າອົງການຈັດຕັ້ງຊາວໜຸ່ມ</div>
+	          <input id ="datepicker1" type="date" class="datepicker" data-value="">
+	       </div>
+	  </div>
+
+	  <div class="row">
+	      <div class="col s12 ">
+	      	  <div id="title">ວັນເຂົ້າອົງການຈັດຕັ້ງກຳມະບານ</div>
+	          <input id ="datepicker2" type="date" class="datepicker" data-value="">
+	       </div>
+	  </div>
+
+	  <div class="row">
+	      <div class="col s12 ">
+	      	  <div id="title">ວັນເຂົ້າອົງການຈັດຕັ້ງສະຫະພັນແມ່ຍິງ</div>
+	          <input id ="datepicker3" type="date" class="datepicker" data-value="">
+	       </div>
+	  </div>
+
+    <!-- Error -->
+     <div id="errortext"></div>
+          
+
+      
+      <div class="row">
+      	<div class="col s10 offset-s1 center-align">
+      		<a class="waves-effect waves-light btn teal accent-4" id="register">SUBMIT</a>
+      	</div>
+      </div>
+  
+  </div>
+
+
+</form>
+
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+      
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+
+
+
+	<script type="text/javascript" src="./index.js"></script>
+
+
+    
+
+</body>
+</html>
