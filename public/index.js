@@ -1,3 +1,5 @@
+import * as config from "../config.js"
+
 $(function() {
     $('.datepicker').pickadate({
 	    selectMonths: true, // Creates a dropdown to control month
@@ -40,7 +42,7 @@ $("#register").click(function(){
 	    }
 
 		// post request
-		$.post("https://lsaj2017.herokuapp.com/register",data, function(response){
+		$.post(config.api,data, function(response){
 			if (response === "OK") {
 				// apply error text
 				$("#errortext").css("color", "green");
