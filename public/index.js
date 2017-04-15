@@ -1,16 +1,16 @@
 import * as config from "../config.js"
 
 $(function() {
-    $('.datepicker').pickadate({
-	    selectMonths: true, // Creates a dropdown to control month
-	    selectYears: 20, // Creates a dropdown of 15 years to control year
-	    formatSubmit: 'yyyy/mm/dd',
-	    hiddenName: true,
-	    showMonthsShort: true,
-	    today: '',
-	    close: 'OK',
-	    closeOnSelect: true
-	  });
+   //  $('.datepicker').pickadate({
+	  //   selectMonths: true, // Creates a dropdown to control month
+	  //   selectYears: 20, // Creates a dropdown of 15 years to control year
+	  //   formatSubmit: 'yyyy/mm/dd',
+	  //   hiddenName: true,
+	  //   showMonthsShort: true,
+	  //   today: '',
+	  //   close: 'OK',
+	  //   closeOnSelect: true
+	  // });
 
 
 
