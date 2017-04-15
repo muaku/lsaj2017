@@ -36,10 +36,7 @@ $("#register").click(function(){
 	  		"grade": grade,
 	  		"schoolname": schoolname,
 	  		"email": email,
-	  		"phone": $("#phone").val(),
-	  		"youth_day": $('#datepicker1').val(),
-	  		"unions_day": $('#datepicker2').val(),
-	  		"union_women_day": $('#datepicker3').val()
+	  		"phone": $("#phone").val()
 	    }
 
 		// post request
