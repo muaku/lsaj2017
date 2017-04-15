@@ -49,7 +49,7 @@ $("#register").click(function(){
 				$('#errortext').text("ຂອບໃຈທີ່ໃຫ້ຄວາມຮ່ວມມື")
 				// clear all input
 				$("#form").find('input').val("")
-				$("#form").find('input:date').val("")
+				//$("#form").find('input:date').val("")
 
 				
 			} else {
