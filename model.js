@@ -10,7 +10,11 @@ var memberSchema = new Schema({
 	phone: String,
 	youth_day: String,
 	unions_day: String,
-	unions_women_day:String
+	unions_women_day:String,
+	date: {
+        type: Date,
+        default: Date.now
+      }
 })
 
 module.exports.memberModel = mongoose.model('memberModel',memberSchema)
