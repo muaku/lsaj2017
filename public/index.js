@@ -17,7 +17,6 @@ $(function() {
 });
 
   
-
 $("#register").click(function(){
 
 	var name = $("#name").val()
